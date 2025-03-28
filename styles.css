@@ -65,7 +65,7 @@
 
   div.welcome {
     color: rgb(133, 133, 133);
-    font-size: 1.25em;
+    font-size: 1em;
   }
 
   .welcome-container {
@@ -87,7 +87,7 @@
   .menu-list ul {
     text-decoration: underline;
     color: rgb(0, 0, 80);
-    font-size: 1.25em;
+    font-size: 1em;
   }
 
   .header-container {
