@@ -1,0 +1,120 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  /* 3. Enable keyword animations */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+  
+  body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 6. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 7. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 8. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    font-weight: normal;
+  }
+  
+  /* 9. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    10. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  :root {
+    --light-gray-background: rgb(222, 227, 232);
+  }
+
+  body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-gray-background);
+  }
+
+  div.welcome {
+    color: rgb(133, 133, 133);
+    font-size: 1.25em;
+  }
+
+  .welcome-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-right: 50px;
+  }
+
+  .menu-list ul {
+    text-decoration: underline;
+    color: rgb(0, 0, 80);
+    font-size: 1.25em;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border: 1px gray solid;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background-color: rgb(222, 227, 232);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .tap-to-pay {
+    border-radius: 25px;
+  }
+
+  .just-ride {
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace, Tahoma, sans-serif;
+    color: rgba(255, 0, 187, 0.08);
+  }
