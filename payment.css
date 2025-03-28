@@ -6,9 +6,10 @@ h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-size: 3em;
+    font-weight: 700;
 }
 
-.container {
+#container {
     display: flex;
     flex-direction: column;
     justify-content: center;
